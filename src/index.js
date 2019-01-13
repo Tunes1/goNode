@@ -1,8 +1,4 @@
-const express = require('express');
-const app = express();
+const server = require('./server');
 
-app.get('/',(req,res) =>{
-    res.send('hello world')
-})
+server.listen(process.env.PORT || 3000);
 
-app.listen(3000);
